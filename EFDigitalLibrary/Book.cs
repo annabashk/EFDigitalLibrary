@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,9 @@ namespace EFDigitalLibrary
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Year { get; set; }
+        public int Year { get; set; }
+        public List<Author> Author { get; set; } = new List<Author>();
+        public List<Genre> Genres { get; set; } = new List<Genre>();
+        public List<User> Users { get; set; } = new List<User>();
     }
 }

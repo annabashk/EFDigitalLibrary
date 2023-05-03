@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace EFDigitalLibrary
 {
-    public class User
+    public class Author
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Email { get; set; }
         public List<Book> Books { get; set; } = new List<Book>();
+
     }
 }
